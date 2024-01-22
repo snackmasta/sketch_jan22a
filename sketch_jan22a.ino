@@ -1,8 +1,24 @@
------BEGIN OPENSSH PRIVATE KEY-----
-b3BlbnNzaC1rZXktdjEAAAAACmFlczI1Ni1jdHIAAAAGYmNyeXB0AAAAGAAAABAMyWcUQx
-4HQA9d0Fq2VzTiAAAAGAAAAAEAAAAzAAAAC3NzaC1lZDI1NTE5AAAAIIVCFSRaikRDc8fK
-Suu9fHibO/8aUad/nnGSIk05YJRIAAAAkJdYtWkAHq6Tmfpl3oyXHCVjMtFxKprjgH2B/7
-vcSX/9k6pslLmwKTfHgd80hhmWXo4xXHYcXlNH14DP/WEsKpfmBPbc7Ii8GrsiEC6dKTf1
-pfMBMZLb4dwnAIH6pwBXlyVSb+g+tgNXzH8JFKGXSapns3V8pRORhwE1/mPJepe9Kfw5Tl
-0khV0zRReZnxwrLg==
------END OPENSSH PRIVATE KEY-----
+/*
+  Following payload will grab saved Wifi password and will send them to your hosted webhook.
+*/
+
+#include "DigiKeyboard.h"
+
+void setup() {
+  pinMode(1, OUTPUT); //LED on Model A 
+}
+
+void loop() {
+  digitalWrite(1, HIGH); //turn on led when program finishes
+  DigiKeyboard.delay(10);
+  digitalWrite(1, LOW); 
+  DigiKeyboard.delay(1`0);
+  digitalWrite(1, HIGH); //turn on led when program finishes
+  DigiKeyboard.delay(10);
+  digitalWrite(1, LOW); 
+  DigiKeyboard.delay(10);
+  digitalWrite(1, HIGH); //turn on led when program finishes
+  DigiKeyboard.delay(10);
+  digitalWrite(1, LOW); 
+  DigiKeyboard.delay(10);
+}
