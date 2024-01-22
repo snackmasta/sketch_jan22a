@@ -9,16 +9,8 @@ void setup() {
 }
 
 void loop() {
-  digitalWrite(1, HIGH); //turn on led when program finishes
-  DigiKeyboard.delay(10);
+  DigiKeyboard.delay(1000);
   digitalWrite(1, LOW); 
-  DigiKeyboard.delay(1`0);
-  digitalWrite(1, HIGH); //turn on led when program finishes
-  DigiKeyboard.delay(10);
-  digitalWrite(1, LOW); 
-  DigiKeyboard.delay(10);
-  digitalWrite(1, HIGH); //turn on led when program finishes
-  DigiKeyboard.delay(10);
-  digitalWrite(1, LOW); 
-  DigiKeyboard.delay(10);
+  DigiKeyboard.delay(1000);
+  digitalWrite(1, HIGH);
 }
